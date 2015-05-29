@@ -185,6 +185,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
+# System Properties Optimizations
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.sleep.mode=1 \
+    wifi.supplicant_scan_interval=180 \
+    windowsmgr.max_events_per_sec=150 \
+    debug.performance.tuning=1 \
+    ro.ril.power_collapse=1 \
+    persist.service.lgospd.enable=0 \
+    persist.service.pcsync.enable=0 \
+    debug.egl.swapinterval=-60 \
+    dalvik.vm.profiler=1 \
+    dalvik.vm.isa.arm.features=lpae,div \
+    dalvik.vm.image-dex2oat-filter=everything \
+    dalvik.vm.dex2oat-filter=everything
+
 # Wifi
 PRODUCT_PACKAGES += \
     dhcpcd.conf \
