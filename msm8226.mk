@@ -194,7 +194,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.power_collapse=1 \
     persist.service.lgospd.enable=0 \
     persist.service.pcsync.enable=0 \
-    debug.egl.swapinterval=-60 \
     dalvik.vm.profiler=1 \
     dalvik.vm.isa.arm.features=lpae,div \
     dalvik.vm.image-dex2oat-filter=everything \
