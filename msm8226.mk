@@ -188,6 +188,7 @@ PRODUCT_PACKAGES += \
 # System Properties Optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep.mode=1 \
+    ro.MAX_HIDDEN_APPS=16 \
     wifi.supplicant_scan_interval=180 \
     windowsmgr.max_events_per_sec=150 \
     debug.performance.tuning=1 \
