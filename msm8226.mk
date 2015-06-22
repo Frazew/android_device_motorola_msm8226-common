@@ -199,6 +199,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.image-dex2oat-filter=everything \
     dalvik.vm.dex2oat-filter=everything
 
+# Prebuilt APKs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/apks/AdAway-release_Build-Apr.09.2015.apk:system/app/AdAway/AdAway.apk \
+    $(LOCAL_PATH)/apks/NovaLauncher_4.0.apk:system/priv-app/NovaLauncher/NovaLauncher.apk
+
 # Wifi
 PRODUCT_PACKAGES += \
     dhcpcd.conf \
